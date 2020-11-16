@@ -3,8 +3,6 @@
 // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=visualization">
 var map, heatmap, maxZoomService, infoWindow;
 var localizacaoAtual = { lat: -23.94, lng: -46.33 };
-const token = "e19416fb4d02cb742d10908aff9fd86ec1a5255b";
-const urlQualidade = "https://api.waqi.info/feed/";
 
 async function initMap() {
   const iconBase =  "./img/";
@@ -202,9 +200,25 @@ async function setPosition(position) {
   //Inicia o mapa com a localização aproximada
   initMap();
 
-  let urlReq = urlQualidade+'/geo:'+localizacaoAtual.lat+";"+localizacaoAtual.lng+"/?token="+token;
-
-  //makeRequest(urlReq);
+  var dadosAtuais = [];
+  
+  $.ajax({
+    url: 'api/index.php?param=buscar',
+    crossDomain: true,
+    method: "POST",
+    data: {
+      lat: localizacaoAtual.lat,
+      long: localizacaoAtual.lng
+    },
+    beforeSend: function(xhr) {
+      xhr.setRequestHeader("Authorization", "Bearer 6QXNMEMFHNY4FJ5ELNFMP5KRW52WFXN5")
+    },
+    success: function(data){
+      dadosAtuais = JSON.parse(data); 
+      console.log(dadosAtuais);
+      console.log(dadosAtuais.data.city.name);
+    }
+  });
 }
 
 function texto(city, qualidadeAr){

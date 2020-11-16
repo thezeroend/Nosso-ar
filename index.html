@@ -52,13 +52,13 @@
 
 			<!-- Office -->
 			<div class="address-box-container">
-				<div class="address-container" data-background-image="images/our-office.jpg">
+				<div class="address-container">
 					<div class="office-address">
-						<h3>São Paulo</h3>
+						<h3>Carregando</h3>
 						<ul>
-							<li>Qualidade do Ar: </li>
-							<li>Densidade</li>
-							<li>Etc</li>
+							<li>Qualidade do Ar: Carregando</li>
+							<li>Densidade: Carregando</li>
+							<li>Umidade: Carregando</li>
 						</ul>
 					</div>
 				</div>
@@ -149,32 +149,6 @@
     <script type="text/javascript" src="./app.js"></script>
     <script>
 	  getLocation();
-	  
-	  async function makeRequest(url) {
-		await fetch("https://api.waqi.info/feed//geo:-23.952617;-46.295344/?token=e19416fb4d02cb742d10908aff9fd86ec1a5255b", {
-			"credentials": "omit",
-			"headers": {
-				"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0",
-				"Accept": "Application/json",
-				"Accept-Language": "pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3"
-			},
-			"referrer": "http://localhost/mapa_test/",
-			"method": "GET",
-			"mode": "cors"
-		});
-	  }
-	  jQuery.support.cors = true;
-	  $.ajax({
-        url: 'https://api.waqi.info/feed//geo:-23.952617;-46.295344/?token=e19416fb4d02cb742d10908aff9fd86ec1a5255b',
-		crossDomain: true,
-		beforeSend: function(xhr) {
-             xhr.setRequestHeader("Authorization", "Bearer 6QXNMEMFHNY4FJ5ELNFMP5KRW52WFXN5")
-        }, success: function(data){
-            alert(data);
-            //process the JSON data etc
-        }
-})
-	  makeRequest();
     </script>
 		<!-- <script type="text/javascript" src="scripts/maps.js"></script> -->
 	</div>
