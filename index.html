@@ -54,11 +54,16 @@
 			<div class="address-box-container">
 				<div class="address-container">
 					<div class="office-address">
-						<h3>Carregando</h3>
+						<h3>
+							<b id="NomeCidade">Carregando</b> </br>
+							<small style="color:white">
+								<b id="NomeEstado">Estado</b> - <b id="NomePais">País</b>
+							</small>
+						</h3>
 						<ul>
-							<li>Qualidade do Ar: Carregando</li>
-							<li>Densidade: Carregando</li>
-							<li>Umidade: Carregando</li>
+							<li>Qualidade do Ar: <b id="QualidadeAr">0</b></li>
+							<li>Temperatura: <b id="Temperatura">0</b></li>
+							<li>Umidade: <b id="Umidade">0</b></li>
 						</ul>
 					</div>
 				</div>
@@ -146,11 +151,14 @@
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALZGKwcSje02WzViMIDrY75aom4KLqV_A&libraries=visualization&v=weekly" defer></script>
 		<!-- <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script> -->
     <script type="text/javascript" src="scripts/markerclusterer.js"></script>
-    <script type="text/javascript" src="./app.js"></script>
+	<script type="text/javascript" src="./app.js"></script>
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="">
+	<script src="//unpkg.com/leaflet-gesture-handling"></script>
     <script>
 	  getLocation();
     </script>
-		<!-- <script type="text/javascript" src="scripts/maps.js"></script> -->
+	<script type="text/javascript" src="scripts/mapanovo.js"></script>
 	</div>
 	<!-- Wrapper / End -->
 </body>
