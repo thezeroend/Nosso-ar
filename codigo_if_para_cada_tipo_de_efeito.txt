@@ -1,0 +1,45 @@
+if ( json.status == "ok" && json.city.name.find(cidade)){
+ const dew, h, no2, o3, p, pm10, pm25;
+
+ if (dew => 10 ){
+     qualidadeAr = "BOM"
+ }else if (dew => 5 ){
+     qualidadeAr = "MODERADO"
+ }else{ qualidadeAr = "RUIM"}
+
+if (h => 10 ){
+     qualidadeAr = "BOM"
+ }else if (h => 5 ){
+     qualidadeAr = "MODERADO"
+ }else{ qualidadeAr = "RUIM"}
+
+if (no2 => 10 ){
+     qualidadeAr = "BOM"
+ }else if (no2 => 5 ){
+     qualidadeAr = "MODERADO"
+ }else{ qualidadeAr = "RUIM"}
+
+if (o3 => 10 ){
+     qualidadeAr = "BOM"
+ }else if (o3 => 5 ){
+     qualidadeAr = "MODERADO"
+ }else{ qualidadeAr = "RUIM"}
+
+if (p => 10 ){
+     qualidadeAr = "BOM"
+ }else if (p => 5 ){
+     qualidadeAr = "MODERADO"
+ }else{ qualidadeAr = "RUIM"}
+
+if (pm10 => 10 ){
+     qualidadeAr = "BOM"
+ }else if (pm25 => 5 ){
+     qualidadeAr = "MODERADO"
+ }else{ qualidadeAr = "RUIM"}
+
+if (p => 10 ){
+     qualidadeAr = "BOM"
+ }else if (p => 5 ){
+     qualidadeAr = "MODERADO"
+ }else{ qualidadeAr = "RUIM"}
+}
