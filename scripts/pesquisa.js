@@ -41,7 +41,7 @@ function init(tokenId, inputId, outputId) {
                 output.append(table);
         
                 output.append(
-                    $("<div/>").html("Clique em uma das cidades para exibir os detalhes")
+                    $("<div/>").html("Clique em uma das cidades para exibir os detalhes (Deixe o campo de pesquisa em branco para ocultar as pesquisas)")
                 );
         
                 var stationInfo = $("<div/>");
